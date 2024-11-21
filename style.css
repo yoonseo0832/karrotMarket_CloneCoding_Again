@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header-top{
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 80px;
+    background-color: #ffffff;
+    flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
+    max-width: 1980px; /* 검색 바의 최대 너비 조정 */
+    margin: 0 auto; /* 검색 영역을 중앙 정렬 */
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-1{
+    display: flex;
+    align-items: center;
+}
+
+.logo-1{
+    height: 55px;
+    margin-right: 10px;
+}
+
+.header-menu{
+    
+}
