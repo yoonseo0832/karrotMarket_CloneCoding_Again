@@ -16,6 +16,7 @@ body {
     background-color: #ffffff;
     width: 1300px; /* 검색 바의 최대 너비 조정 */
     margin: 0 auto;
+    overflow: visible;
 }
 
 .logo-1 {
@@ -37,7 +38,6 @@ body {
 .header-menu a {
     text-decoration: none;
     font-weight: 500;
-    position: relative;
     color: #000;
     font-size: 16px;
     transition: color 0.3s ease;
@@ -75,9 +75,9 @@ body {
 }
 
 .sub-menu a {
+    display: block;
     text-align: center;
     padding: 10px 20px;
-    white-space: nowrap;
     color: #555;
     font-size: 14px;
     text-decoration: none;
@@ -86,6 +86,14 @@ body {
 
 .sub-menu a:hover {
     background-color: #f8f9fa;
+}
+
+.sub-menu {
+    display: none !important;
+}
+  
+.dropdown:hover .sub-menu {
+    display: block !important;
 }
 
 .app-download-btn{
