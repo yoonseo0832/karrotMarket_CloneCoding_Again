@@ -56,6 +56,10 @@ body {
     z-index: 1010;
 }
 
+.dropdown:hover a:not(:hover){
+    color: #888;
+}
+
 .dropdown:hover .sub-menu {
     display: block;
 }
@@ -70,14 +74,14 @@ body {
     border: 1px solid #ddd;
     z-index: 1020;
     padding: 10px 0;
-    width: 110px;
+    width: 120px;
     border-radius: 4px;
 }
 
 .sub-menu a {
     display: block;
     text-align: left;
-    padding: 10px 10px;
+    padding: 10px;
     color: #555;
     font-size: 13px;
     text-decoration: none;
