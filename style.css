@@ -14,10 +14,8 @@ body {
     align-items: center;
     padding: 20px 200px;
     background-color: #ffffff;
-    flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
     width: 1300px; /* 검색 바의 최대 너비 조정 */
     margin: 0 auto;
-    border-bottom: 1px solid #ddd;
 }
 
 .logo-1 {
@@ -55,6 +53,7 @@ body {
 
 .header-menu .dropdown {
     position: relative;
+    z-index: 1010;
 }
 
 .header-menu .dropdown:hover .sub-menu {
@@ -69,7 +68,7 @@ body {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
-    z-index: 1100;
+    z-index: 1020;
     padding: 10px 0;
     width: 110px;
     border-radius: 4px;
@@ -77,6 +76,7 @@ body {
 
 .sub-menu a {
     display: block;
+    text-align: center;
     padding: 10px 20px;
     white-space: nowrap;
     color: #555;
@@ -90,14 +90,14 @@ body {
 }
 
 .app-download-btn{
-    padding-right: 150px;
+    padding-right: 180px;
 }
 
 .app-download-btn a {
     text-decoration: none;
     color: #ff8a3d;
     background-color: #ff6f0f24;
-    padding: 10px 20px;
+    padding: 8px 10px;
     border-radius: 5px;
     font-weight: 200;
 }
@@ -279,9 +279,9 @@ body {
 
 .category-list{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap; /* 화면 크기에 따라 아이템이 감싸지도록 설정 */
-    padding-left: 60px; 
+    padding-left: 50px; 
     flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
     max-width: 1500px; /* 검색 바의 최대 너비 조정 */
     margin: 0 auto;
@@ -332,7 +332,7 @@ body {
     padding-left: 80px;
     flex-grow: 0; 
     max-width: 1500px;
-    height: 400px;
+    height: 362px;
     background-color: #fff7e6;
 }
 
