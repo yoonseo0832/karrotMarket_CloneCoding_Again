@@ -76,10 +76,10 @@ body {
 
 .sub-menu a {
     display: block;
-    text-align: center;
-    padding: 10px 20px;
+    text-align: left;
+    padding: 10px 10px;
     color: #555;
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: none;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -90,10 +90,11 @@ body {
 
 .sub-menu {
     display: none !important;
+    width: 115px;
 }
   
 .dropdown:hover .sub-menu {
-    display: block !important;
+    
 }
 
 .app-download-btn{
