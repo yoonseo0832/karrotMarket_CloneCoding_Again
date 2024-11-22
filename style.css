@@ -17,9 +17,6 @@ body {
     flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
     width: 1300px; /* 검색 바의 최대 너비 조정 */
     margin: 0 auto;
-}
-
-.header-top .scrolled{
     border-bottom: 1px solid #ddd;
 }
 
@@ -67,8 +64,8 @@ body {
 .sub-menu {
     display: none;
     position: absolute;
-    top: 150%;
-    left: 210px;
+    top: 100%;
+    left: 0;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
