@@ -51,12 +51,12 @@ body {
     color: #888;
 }
 
-.header-menu .dropdown {
+.dropdown {
     position: relative;
     z-index: 1010;
 }
 
-.header-menu .dropdown:hover .sub-menu {
+.dropdown:hover .sub-menu {
     display: block;
 }
 
@@ -181,10 +181,6 @@ body {
     cursor: pointer;
     padding: 5px;
     font-size: 14px;
-}
-
-.search-bar-input-container input:focus {
-    outline: none;
 }
 
 .search-btn {
@@ -448,6 +444,7 @@ body {
 .footer-sections {
     display: flex;
     gap: 40px;
+    padding-right: 50px;
 }
 
 .footer-column {
