@@ -11,11 +11,12 @@ body {
     z-index: 1000;
     display: flex;
     justify-content: space-between;
+    border: 1px solid #ddd;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 270px;
     background-color: #ffffff;
     flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
-    max-width: 1300px; /* 검색 바의 최대 너비 조정 */
+    width: 1000px; /* 검색 바의 최대 너비 조정 */
     margin: 0 auto;
 }
 
@@ -25,7 +26,7 @@ body {
 }
 
 .header-top .logo-1 img {
-    height: 40px;
+    height: 48px;
 }
 
 .header-menu {
@@ -63,8 +64,8 @@ body {
 .sub-menu {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 150%;
+    left: 210px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
@@ -85,7 +86,7 @@ body {
 }
 
 .sub-menu a:hover {
-    background-color: #f8f9fa;
+    display: grid;
 }
 
 .app-download-btn a {
@@ -238,6 +239,11 @@ body {
 .banner-content{
     flex: 1;
     text-align: center;
+}
+
+.banner-content img{
+    height: 40px;
+    width: 100px;
 }
 
 /* 인기 카테고리 영역 */
