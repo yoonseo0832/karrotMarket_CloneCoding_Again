@@ -13,10 +13,10 @@ body {
     justify-content: space-between;
     border: 1px solid #ddd;
     align-items: center;
-    padding: 20px 270px;
+    padding: 20px 200px;
     background-color: #ffffff;
     flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
-    width: 1000px; /* 검색 바의 최대 너비 조정 */
+    width: 1300px; /* 검색 바의 최대 너비 조정 */
     margin: 0 auto;
 }
 
@@ -87,6 +87,10 @@ body {
 
 .sub-menu a:hover {
     display: grid;
+}
+
+.app-download-btn{
+    padding-right: 20px;
 }
 
 .app-download-btn a {
@@ -217,7 +221,7 @@ body {
     display: flex;
     flex: 1;
     margin-right: 20px;
-    padding-left: 80px;
+    padding-left: 230px;
     padding-bottom: 120px;
     position: relative;
 }
@@ -225,7 +229,7 @@ body {
 .banner-text h1{
     font-size: 42px;
     color: #111;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
     font-weight: 700;
     line-height: 1.4;
 }
@@ -238,12 +242,17 @@ body {
 
 .banner-content{
     flex: 1;
+    padding-right: 180px;
+    padding-bottom: 73px;
     text-align: center;
 }
 
 .banner-content img{
+    width: 700px;
+}
+
+.app-btn{
     height: 40px;
-    width: 100px;
 }
 
 /* 인기 카테고리 영역 */
@@ -325,10 +334,10 @@ body {
 }
 
 .app-text h2{
-    font-size: 27px;
+    font-size: 32px;
     color: #ff6f0f;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: -25px;
 }
 
 .app-text h1{
@@ -339,12 +348,12 @@ body {
     line-height: 1.4;
 }
 
-.app-button{
+.app-btn{
     display: flex;
     gap: 15px;
 }
 
-.app-button a img{
+.app-btn a img{
     height: 40px;
 }
 
@@ -353,8 +362,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    max-width: 1500px;
-    height: 500px; 
+    height: 575px; 
     overflow: hidden;
 }
 
@@ -381,7 +389,7 @@ body {
     z-index: 1;
 }
 
-.app-img-1 img{
+.app-image-1 img{
     width: 280px;
     max-height: 100%; 
     display: block;
@@ -389,7 +397,7 @@ body {
     border: 4px solid rgb(255, 111, 15);
 }
 
-.app-img-2 img{
+.app-image-2 img{
     width: 280px;
     max-height: 100%; 
     display: block;
@@ -397,7 +405,7 @@ body {
     border: 4px solid rgb(255, 111, 15);
 }
 
-.app-img-3 img{
+.app-image-3 img{
     width: 280px;
     max-height: 100%; 
     display: block;
