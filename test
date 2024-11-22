@@ -15,25 +15,23 @@
             <a href="#"><b>중고거래</b></a>
             <a href="#"><b>부동산</b></a>
             <a href="#"><b>중고차</b></a>
-            <a href="#" class="dropdown">
-                <b>알바∨</b>
+            <a href="#"><b>알바∨</b></a>
                 <div class="sub-menu">
                     <a href="#">알바 검색</a>
                     <a href="#">당근알바 소개</a>
                     <a href="#">기업형 서비스</a>
                     <a href="#">신뢰와 안전</a>
                 </div>
-            </a>
             <a href="#"><b>동네업체</b></a>
             <a href="#"><b>동네생활</b></a>
             <a href="#"><b>모임</b></a>
         </nav>
-        <button class="download-btn"><b>앱 다운로드</b></button>
+        <button class="download-btn">앱 다운로드</button>
     </div>
     <div class="main-container">
         <div class="location-select">
             <img src="위치로고.jpg" alt="위치로고">
-            <span> 용산구 ∨</span>
+            <span> 당산구 ∨</span>
         </div>
         <div class="search-section">
             <div class="search-bar-group">
@@ -63,7 +61,7 @@
     <div class="main-banner">
         <img src="메인배너1.jpg" alt="Main Banner" class="main-banner-img" />
     </div>
-<div class="popular-categories">
+    <div class="popular-categories">
     <h2>인기 카테고리</h2>
     <div class="category-container">
         <button class="category-item" onclick="location.href='#'">

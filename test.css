@@ -5,79 +5,46 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.header-top{
+/* 배너 스타일 */
+.banner {
     display: flex;
-    position: fixed;
-    z-index: 999;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    height: 80px;
     background-color: #ffffff;
     flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
-    max-width: 1980px; /* 검색 바의 최대 너비 조정 */
+    max-width: 1300px; /* 검색 바의 최대 너비 조정 */
     margin: 0 auto; /* 검색 영역을 중앙 정렬 */
-    border-bottom: 1px solid #ddd;
 }
 
-.logo-1{
+.logo-1 {
     display: flex;
     align-items: center;
 }
 
-.logo-1 img{
+.logo-1 img {
     height: 55px;
     margin-right: 10px;
 }
 
-.header-menu{
+.menu {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.header-menu a{
+.menu a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
-    position: relative;
     transition: color 0.3s ease;
 }
 
-.header-menu a:hover{
-    color: #000;
+.menu a:hover {
+    color: #ff8c00; /* 당근 오렌지 색 */
 }
 
-.header-menu:hover a:not(hover){
-    color: #000;
-}
-
-.header-menu:hover a{
-    color: #000;
-}
-
-.sub-menu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    z-index: 10;
-    width: 110px;
-}
-
-.sub-menu a:hover{
-    background-color: #f5f5f5;
-}
-
-.dropdown:hover .sub-menu {
-    display: block;
-}
-
-.app-download-btn {
+.download-btn {
     background-color: #ffe8d5;
     color: #ff8c00;
     padding: 8px 16px;
@@ -88,11 +55,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.app-download-btn:hover {
+.download-btn:hover {
     background-color: #ffca98;
 }
 
-.header-bottom{
+/* 메인 컨테이너 스타일 */
+.main-container {
     display: flex; /* 수평 정렬 */
     align-items: flex-start; /* 수직 정렬 */
     padding: 20px;
@@ -102,6 +70,8 @@ body {
     margin: 0 auto; /* 검색 영역을 중앙 정렬 */
 }
 
+
+/* 지역 선택 스타일 */
 .location-select {
     display: flex;
     align-items: center;
@@ -117,26 +87,29 @@ body {
     margin-right: 5px;
 }
 
+/* 검색 영역 컨테이너 */
 .search-section {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px; /* 검색 바와 인기 검색어 간격 */
     flex-grow: 1;
 }
 
+/* 검색 바 그룹 (드롭다운 + 검색창) */
 .search-bar-group {
     display: flex;
     align-items: center;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     background-color: #ffffff;
     border-radius: 4px;
     overflow: hidden;
-    max-width: 1500px;
+    max-width: 1500px; /* 검색 바의 최대 너비 */
 }
 
-.search-bar-btn{
+/* 중고거래 드롭다운 스타일 */
+.dropdown-button {
     padding: 10px 12px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-right: 1px solid #9c9a9a;
     cursor: pointer;
     display: flex;
@@ -148,6 +121,7 @@ body {
     font-size: 10px;
 }
 
+/* 검색 입력 필드 스타일 */
 .search-input-container {
     display: flex;
     align-items: center;
@@ -166,16 +140,18 @@ body {
     outline: none;
 }
 
-.search-btn {
+/* 검색 버튼 스타일 */
+.search-button {
     background: none;
     border: none;
     cursor: pointer;
     font-size: 16px;
 }
 
+/* 인기 검색어 스타일 */
 .popular-searches {
     font-size: 14px;
-    color: #000;
+    color: #000000;
     display: flex;
     align-items: center;
     gap: 15px; /* 각 링크 사이의 기본 간격 설정 */
@@ -190,71 +166,47 @@ body {
     text-decoration: underline;
 }
 
-.banner{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 250px;
-    background-color: #fff1aa;
-}
-
-.banner-text{
-    flex: 1;
-    margin-right: 20px;
-    padding-left: 80px;
-    padding-bottom: 120px;
-}
-
-.banner-text h1{
-    font-size: 42px;
-    color: #111;
-    margin-bottom: 10px;
-    font-weight: 700;
-    line-height: 1.4;
-}
-
-.banner-text p{
-    font-size: 20px;
-    font-weight: 700;
-    color: #333;
-}
-
-.banner-content{
-    flex: 1;
-    text-align: center;
-}
-
-.banner-content img{
-    width: 120%;
-    max-width: 500px;
-}
-
-.categories {
+.main-banner {
+    width: 100%;
+    overflow: hidden; /* 컨테이너가 이미지를 감싸며 넘치는 부분 숨김 */
+    margin: 0; /* 여백을 없애 화면에 꽉 차도록 함 */
+  }
+  
+  .main-banner-img {
+    width: 100%;
+    height: auto; /* 비율 유지하며 가로폭에 맞춤 */
+    display: block; /* 이미지가 인라인 요소의 특성을 피하고 줄 바꿈 */
+  }
+  
+  /* 인기 카테고리 섹션 스타일링 */
+.popular-categories {
     padding: 20px 0;
     padding-left: 60px; 
     flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
     max-width: 1500px; /* 검색 바의 최대 너비 조정 */
     margin: 0 auto; /* 검색 영역을 중앙 정렬 */
+
+
 }
 
-.categories h2{
+.popular-categories h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    padding-left: 60px;
+    padding-left: 60px; /* 카테고리 제목의 좌측 패딩 조정 */
+    
 }
 
-.category-list{
+.category-container {
     display: flex;
     gap: 20px;
     flex-wrap: wrap; /* 화면 크기에 따라 아이템이 감싸지도록 설정 */
     padding-left: 60px; 
     flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
     max-width: 1500px; /* 검색 바의 최대 너비 조정 */
-    margin: 0 auto;
+    margin: 0 auto; /* 검색 영역을 중앙 정렬 */
 }
 
-.category-item{
+.category-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,16 +217,16 @@ body {
     cursor: pointer;
     outline: none;
     padding: 0;
-    margin: 30px;
+    margin: 30px
 }
 
-.category-item img{
+.category-item img {
     width: 160px;
     height: 160px;
     border-radius: 50%; /* 이미지를 원형으로 만듦 */
     background-color: #f4f4f4; /* 이미지가 없을 경우 기본 배경색 */
     padding: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* 버튼 효과 추가 */
 }
 
 .category-item img:hover {
@@ -285,106 +237,6 @@ body {
     margin-top: 8px;
     font-size: 14px;
     color: #000;
-}
-
-.app-adver{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 50px 100px;
-    flex-grow: 0; 
-    max-width: 1500px;
-    height: 500px;
-    background-color: #fff7e6;
-}
-
-.app-text{
-    flex: 1;
-    text-align: left;
-    padding-left: 76px;
-    max-width: 500px;
-}
-
-.app-text h2{
-    font-size: 27px;
-    color: #ff6f0f;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.app-text h1{
-    font-size: 40px;
-    color: #333;
-    font-weight: 700;
-    margin-bottom: 20px;
-    line-height: 1.4;
-}
-
-.app-button{
-    display: flex;
-    gap: 15px;
-}
-
-.app-button a img{
-    height: 40px;
-}
-
-.app-content{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 1500px;
-    height: 500px; 
-    overflow: hidden;
-}
-
-.app-image-1, .app-image-2, .app-image-3 {
-    position: absolute; 
-    
-}
-
-.app-image-1 {
-    top: 20%;
-    left: 270px;
-    z-index: 1; 
-}
-
-.app-image-2 {
-    top: -60%;
-    left: 580px;
-    z-index: 2; 
-}
-
-.app-image-3 {
-    top: 68%;
-    left: 250px;
-    z-index: 1;
-}
-
-.app-img-1 img{
-    width: 280px;
-    max-height: 100%; 
-    display: block;
-    border-radius: 30px;
-    border: 4px solid rgb(255, 111, 15);
-}
-
-.app-img-2 img{
-    width: 280px;
-    max-height: 100%; 
-    display: block;
-    border-radius: 30px;
-    border: 4px solid rgb(255, 111, 15);
-}
-
-.app-img-3 img{
-    width: 280px;
-    max-height: 100%; 
-    display: block;
-    border-radius: 30px;
-    border: 4px solid rgb(255, 111, 15);
 }
 
 .footer-container {
