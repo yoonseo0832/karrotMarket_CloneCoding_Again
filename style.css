@@ -93,7 +93,7 @@ body {
 }
 
 .app-download-btn{
-    padding-right: 95px;
+    padding-right: 150px;
 }
 
 .app-download-btn a {
@@ -106,7 +106,7 @@ body {
 }
 
 .app-download-btn a:hover {
-    background-color: #f46a0f50;
+    background-color: #ff6f0f8a;
 }
 
 /* 헤더 하단 영역 */
@@ -136,9 +136,11 @@ body {
 
 .location-select a{
     text-decoration: none;
+    font-weight: bold;
+    color: #111;
 }
 
-.search-section {
+.search-section{
     display: flex;
     flex-direction: column;
     gap: 10px; 
@@ -179,6 +181,7 @@ body {
 .search-bar-input-container input {
     border: none;
     flex-grow: 1;
+    cursor: pointer;
     padding: 5px;
     font-size: 14px;
 }
@@ -204,6 +207,7 @@ body {
 
 .popular-searches a {
     text-decoration: none;
+    cursor: pointer;
     color: #868b94;
 }
 
@@ -327,7 +331,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 50px 0px;
+    padding: 70px 0px;
     padding-left: 80px;
     flex-grow: 0; 
     max-width: 1500px;
