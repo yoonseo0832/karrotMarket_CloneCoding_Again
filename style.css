@@ -93,7 +93,7 @@ body {
 }
 
 .app-download-btn{
-    padding-right: 20px;
+    padding-right: 95px;
 }
 
 .app-download-btn a {
@@ -102,11 +102,11 @@ body {
     background-color: #ff6f0f24;
     padding: 10px 20px;
     border-radius: 5px;
-    font-weight: 500;
+    font-weight: 200;
 }
 
 .app-download-btn a:hover {
-    background-color: #e6762f;
+    background-color: #f46a0f50;
 }
 
 /* 헤더 하단 영역 */
@@ -132,6 +132,10 @@ body {
 .location-select img {
     height: 20px;
     margin-right: 5px;
+}
+
+.location-select a{
+    text-decoration: none;
 }
 
 .search-section {
@@ -260,7 +264,7 @@ body {
 /* 인기 카테고리 영역 */
 .categories {
     padding: 20px 0;
-    padding-left: 60px; 
+    padding-left: 120px; 
     flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
     max-width: 1500px; /* 검색 바의 최대 너비 조정 */
     margin: 0 auto; /* 검색 영역을 중앙 정렬 */
@@ -289,29 +293,31 @@ body {
     text-align: center;
     width: 120px; /* 아이템의 고정된 너비 */
     border: none;
+    gap: 10px;
     background: none;
     cursor: pointer;
     outline: none;
-    padding: 0;
+    padding: 5px;
     margin: 30px;
 }
 
 .category-item img{
-    width: 160px;
-    height: 160px;
+    width: 145px;
+    height: 145px;
     border-radius: 50%; /* 이미지를 원형으로 만듦 */
     background-color: #f4f4f4; /* 이미지가 없을 경우 기본 배경색 */
-    padding: 10px;
+    padding: 15px;
     transition: transform 0.3s ease;
 }
 
 .category-item img:hover {
-    transform: scale(0.75); /* hover 시 확대 효과 */
+    transform: scale(1.05); /* hover 시 확대 효과 */
 }
 
 .category-item p {
     margin-top: 8px;
     font-size: 14px;
+    font-weight: bold;
     color: #000;
 }
 
@@ -397,21 +403,22 @@ body {
     max-height: 100%; 
     display: block;
     border-radius: 30px;
-    border: 4px solid rgb(255, 111, 15);
+    border: 4px solid rgb(255, 226, 210);
 }
 
 .app-image-2 img{
-    width: 540px;
+    width: 250px;
     max-height: 100%; 
     display: block;
     border-radius: 30px;
-    border: 4px solid rgb(255, 111, 15);
+    border: 4px solid rgb(255, 226, 210);
 }
 
 .app-image-3 img{
     width: 330px;
     max-height: 100%; 
     display: block;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -463,7 +470,7 @@ body {
 }
 
 .footer-column a:hover {
-    color: #ff8c00; /* 당근 오렌지 색상 */
+    color: #777;  
 }
 
 .logo-2 {
