@@ -28,9 +28,9 @@
             <a href="#"><b>동네생활</b></a>
             <a href="#"><b>모임</b></a>
         </nav>
-        <button class="app-download-btn">
+        <div class="app-download-btn">
             <a href="#"><b>앱 다운로드</b></a>
-        </button>
+        </div>
     </div>
     <div class="header-bottom">
         <div class="location-select">
@@ -203,5 +203,15 @@
             </div>
         </div>
     </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled'); // 스크롤 시 클래스 추가
+            } else {
+                header.classList.remove('scrolled'); // 스크롤이 없으면 클래스 제거
+            }
+        });
+    </script>
 </body>
 </html>

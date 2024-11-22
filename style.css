@@ -11,13 +11,16 @@ body {
     z-index: 1000;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #ddd;
     align-items: center;
     padding: 20px 200px;
     background-color: #ffffff;
     flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
     width: 1300px; /* 검색 바의 최대 너비 조정 */
     margin: 0 auto;
+}
+
+.header-top .scrolled{
+    border-bottom: 1px solid #ddd;
 }
 
 .logo-1 {
@@ -86,7 +89,7 @@ body {
 }
 
 .sub-menu a:hover {
-    display: grid;
+    background-color: #f8f9fa;
 }
 
 .app-download-btn{
@@ -95,8 +98,8 @@ body {
 
 .app-download-btn a {
     text-decoration: none;
-    color: #fff;
-    background-color: #ff8a3d;
+    color: #ff8a3d;
+    background-color: #ff6f0f24;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: 500;
@@ -110,9 +113,8 @@ body {
 .header-bottom{
     display: flex; /* 수평 정렬 */
     align-items: flex-start; /* 수직 정렬 */
-    padding: 20px;
+    padding: 100px 200px 15px 200px;
     gap: 20px;
-    flex-grow: 0; /* 검색 섹션의 가로 크기 고정 */
     max-width: 1285px; /* 검색 바의 최대 너비 조정 */
     margin: 0 auto; /* 검색 영역을 중앙 정렬 */
 }
@@ -319,10 +321,11 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 50px 100px;
+    padding: 50px 0px;
+    padding-left: 80px;
     flex-grow: 0; 
     max-width: 1500px;
-    height: 500px;
+    height: 400px;
     background-color: #fff7e6;
 }
 
@@ -362,7 +365,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    height: 575px; 
+    height: 500px; 
     overflow: hidden;
 }
 
@@ -372,25 +375,25 @@ body {
 }
 
 .app-image-1 {
-    top: 20%;
-    left: 270px;
+    top: 19%;
+    left: 100px;
     z-index: 1; 
 }
 
 .app-image-2 {
-    top: -60%;
-    left: 580px;
+    top: -15%;
+    left: 410px;
     z-index: 2; 
 }
 
 .app-image-3 {
-    top: 68%;
-    left: 250px;
+    top: 58%;
+    left: 32px;
     z-index: 1;
 }
 
 .app-image-1 img{
-    width: 280px;
+    height: 420px;
     max-height: 100%; 
     display: block;
     border-radius: 30px;
@@ -398,7 +401,7 @@ body {
 }
 
 .app-image-2 img{
-    width: 280px;
+    width: 540px;
     max-height: 100%; 
     display: block;
     border-radius: 30px;
@@ -406,11 +409,10 @@ body {
 }
 
 .app-image-3 img{
-    width: 280px;
+    width: 330px;
     max-height: 100%; 
     display: block;
-    border-radius: 30px;
-    border: 4px solid rgb(255, 111, 15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* 푸터 영역 */
