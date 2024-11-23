@@ -52,6 +52,9 @@ body {
     color: #888;
 }
 
+.dropdown:hover a:not(:hover){
+    color: #888;
+}
 .dropdown {
     position: relative;
     z-index: 1010;
