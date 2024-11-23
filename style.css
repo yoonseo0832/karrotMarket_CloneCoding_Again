@@ -57,18 +57,18 @@ body {
     z-index: 1010;
 }
 
-.header-menu:hover .dropdown > a:not(:hover) {
-    color: #888;
-}
-
-.dropdown > a {
+.dropdown > b {
     color: #000;
     transition: color 0.3s ease;
 }
 
-.dropdown:hover > a {
+.dropdown:hover > b {
     display: block;
     color: #000;
+}
+
+.header-menu:hover .dropdown > b:not(:hover) {
+    color: #888;
 }
 
 .sub-menu {
